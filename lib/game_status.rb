@@ -55,13 +55,6 @@ end
 def over? (board)
   if (won?(board) != nil)
     return true
-  elsif (won?(board) != nil) && (full?(board) != true)
-    return true
-  elsif (won?(board) != nil) && (full?(board) == true)
-  return true
-  elsif draw?(board) == true
-    return true
-  else
-  false
+
 end
 end
