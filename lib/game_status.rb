@@ -53,7 +53,9 @@ def draw? (board)
 end
 
 def over? (board)
-  if (won?(board) != nil)
+  if draw?(board)==nil
+    return true
+  elsif (won?(board) != nil)
     return true
 
 end
