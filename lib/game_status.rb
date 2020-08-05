@@ -16,7 +16,7 @@ WIN_COMBINATIONS =
   [2,4,6]
   ]
 
-winner
+winner=""
 
   def won? (board)
     if board.all?("") || board.all?(" ") || board.all?(nil)
@@ -70,5 +70,9 @@ end
 end
 
 def winner(board)
+  if winner=""
+    return nil
+  else
   return winner
+end
 end
