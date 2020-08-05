@@ -70,9 +70,10 @@ end
 end
 
 def winner(board)
+  won?(board)
   if winner=""
     return nil
   else
-  return winner
+    return winner
 end
 end
