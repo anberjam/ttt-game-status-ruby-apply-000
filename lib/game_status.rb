@@ -63,6 +63,4 @@ def over? (board)
   if full?(board) == true
   return true
 end
- if (board.any("") || board.any(" ") || board.any(nil)) && 
-end
 end
