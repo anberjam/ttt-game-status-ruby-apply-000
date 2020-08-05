@@ -71,9 +71,10 @@ end
 
 def winner(board)
   won?(board)
-  if winner=""
-    return nil
-  else
+  
+  if winner!=""
     return winner
+  else
+    return nil
 end
 end
