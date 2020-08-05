@@ -70,6 +70,12 @@ def winner(board)
   if won?(board)==nil || draw?(board)
     return nil
   end
-  
+  WIN_COMBINATIONS.each do |win_index|
+        if board[win_index[0]]=="X" && board[win_index[1]]=="X" && board[win_index[2]]=="X"
+            return win_index
+        elsif board[win_index[0]]=="O" && board[win_index[1]]=="O" && board[win_index[2]]=="O"
+            return win_index
+          end
+        end
  
 end
