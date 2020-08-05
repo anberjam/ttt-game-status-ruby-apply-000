@@ -66,4 +66,3 @@ if full?(board)==false && won?(board) == nil && draw?(board) == false
   return false
 end
 end
-end
