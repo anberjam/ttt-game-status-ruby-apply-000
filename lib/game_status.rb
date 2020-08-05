@@ -65,3 +65,4 @@ def over? (board)
 end
  if (board.any("") || board.any(" ") || board.any(nil)) && 
 end
+end
