@@ -26,10 +26,11 @@ WIN_COMBINATIONS =
             return win_index
         elsif board[win_index[0]]=="O" && board[win_index[1]]=="O" && board[win_index[2]]=="O"
             return win_index
-        elsif board.none?("") && board.none?(" ") && board.none?(nil)
+          end
+        end
+        if board.none?("") && board.none?(" ") && board.none?(nil)
         return nil
       end
-    end
   end
   
   def full?(board)
@@ -62,4 +63,5 @@ def over? (board)
   if full?(board) == true
   return true
 end
+ if (board.any("") || board.any(" ") || board.any(nil)) && 
 end
