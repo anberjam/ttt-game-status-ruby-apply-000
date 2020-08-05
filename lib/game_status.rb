@@ -67,11 +67,8 @@ end
 end
 
 def winner(board)
-  won?(board)
-  
-  if winnerz!=""
-    return winnerz
-  else
+  if won?(board)==nil || draw?(board)
     return nil
-end
+  end
+ 
 end
