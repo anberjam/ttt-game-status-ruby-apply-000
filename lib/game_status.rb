@@ -15,7 +15,8 @@ WIN_COMBINATIONS =
   [0,4,8],
   [2,4,6]
   ]
-WINNER=nil
+
+winner
 
   def won? (board)
     if board.all?("") || board.all?(" ") || board.all?(nil)
@@ -24,10 +25,10 @@ WINNER=nil
         
     WIN_COMBINATIONS.each do |win_index|
         if board[win_index[0]]=="X" && board[win_index[1]]=="X" && board[win_index[2]]=="X"
-          WINNER="X"
+          winner="X"
             return win_index
         elsif board[win_index[0]]=="O" && board[win_index[1]]=="O" && board[win_index[2]]=="O"
-        WINNER="Y"
+        winner="O"
             return win_index
           end
         end
@@ -69,5 +70,5 @@ end
 end
 
 def winner(board)
-  return WINNER
+  return winner
 end
