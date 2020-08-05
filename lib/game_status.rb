@@ -26,7 +26,8 @@ WIN_COMBINATIONS =
             return win_index
         elsif board[win_index[0]]=="O" && board[win_index[1]]=="O" && board[win_index[2]]=="O"
             return win_index
-        elsif board.none?("")
+        elsif board.none?("") && board.none?(" ") && board.none?(nil)
+        return nil
         
         #board[win_index[0]] != board[win_index[1]] || board[win_index[1]] != board[win_index[2]] || board[win_index[2]] != board[win_index[0]]
         return nil
